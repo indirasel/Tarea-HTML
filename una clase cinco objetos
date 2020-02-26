@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        class Cellphone
+        {
+        constructor(brand, model, color, year, capacity)
+        {
+        this.cellphonebrand = brand;
+        this.cellphonemodel = model;
+        this.cellphonecolor = color;
+        this.cellphoneyear = year;
+        this.cellphonecapacity = capacity;
+        }
+        cellphone1(){
+        return "This " + this.cellphonebrand + " " + this.cellphonemodel + " is a color new " + this.cellphoneyear + " " + this.cellphonecapacity;
+        }
+        }
+
+
+        mycellphone = newCellphone("Apple", "iPhone11", "purple", "2019", "256GB");
+        document.getElementById("demo").innerHTML = mycellphone.cellphone1();
+
+    </script>
+
+</body>
+</html>
